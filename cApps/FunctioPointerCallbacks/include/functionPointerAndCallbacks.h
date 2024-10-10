@@ -4,6 +4,7 @@
 #include <stdio.h>
 void calculatorMain(void);
 void buttonApp(void);
+void operationToArrayMain(void);
 
 
 

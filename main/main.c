@@ -12,13 +12,17 @@ int main()
 
     #ifdef FUNC_PTR_AND_CALLBACKS
 
-        printf("Executing Function pointers app\n");
+        printf("Executing calculator app\n");
+
+        calculatorMain();
+        
+
+        printf("\nExecuting button app\n");
 
         buttonApp();
 
-        printf("\nExecuting callbacks app\n");
-
-        calculatorMain();
+        printf("\nExecuting operations to array app\n");
+        operationToArrayMain();
     #endif
 
 

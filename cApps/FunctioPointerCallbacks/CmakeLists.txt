@@ -8,8 +8,10 @@ include_directories(include interfaces/include )
 set(SOURCES
     source/calculator.c
     source/buttonApp.c
+    source/operationToArrayApp.c
     interfaces/source/mathOperation.c
     interfaces/source/buttonAction.c
+    interfaces/source/operationToArray.c
 )
 
 # Create a static library
