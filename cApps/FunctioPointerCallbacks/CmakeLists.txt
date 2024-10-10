@@ -6,8 +6,10 @@ include_directories(include interfaces/include )
 
 # Source files
 set(SOURCES
-    source/functionPointers.c
+    source/calculator.c
+    source/buttonApp.c
     interfaces/source/mathOperation.c
+    interfaces/source/buttonAction.c
 )
 
 # Create a static library

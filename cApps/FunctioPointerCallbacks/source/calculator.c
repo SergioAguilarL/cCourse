@@ -1,11 +1,10 @@
-#include "functionPointerAndCallbacks.h"
 #include "mathOperation.h"
 
 /*the porpuse of this fiule is to practice funcion pointer for C
     In the functionality of this files is to implementa a very basic calculator 
     using function pointers  */
 
-void functionPointersMain(void)
+void calculatorMain(void)
 {
     int option;
     int num1; 

@@ -12,9 +12,13 @@ int main()
 
     #ifdef FUNC_PTR_AND_CALLBACKS
 
-        printf("Executing Function pointers and callbacks app\n");
+        printf("Executing Function pointers app\n");
 
-        functionPointersMain();
+        buttonApp();
+
+        printf("\nExecuting callbacks app\n");
+
+        calculatorMain();
     #endif
 
 

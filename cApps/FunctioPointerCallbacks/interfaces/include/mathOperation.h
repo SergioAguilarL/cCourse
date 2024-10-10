@@ -2,6 +2,8 @@
 #define CALCULATOR_H
 
 
+#include <stdio.h>
+
 /*The porpuse of this file is for function prototypes for functions for basic aritmetic operation*/
 
 int sum(int a, int b);

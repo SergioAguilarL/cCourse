@@ -2,9 +2,8 @@
 #define FUNCTIONPOINTERS_H
 
 #include <stdio.h>
-
-void functionPointersMain(void);
-void callbacksMain(void);
+void calculatorMain(void);
+void buttonApp(void);
 
 
 
