@@ -3,7 +3,7 @@ set APP_NAME=%1
 set BUILD_DIR=build
 
 echo Select an application to build:
-echo 1. Function pointers & callbacks
+echo 1. Function pointers and callbacks
 set /p choice="Enter the number of your choice: "
 
 if "%choice%"=="1" (
