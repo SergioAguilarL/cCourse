@@ -2,7 +2,13 @@
 #define FUNCTIONPOINTERS_H
 
 #include <stdio.h>
-void functionPointers(void);
+
+void functionPointersMain(void);
+void callbacksMain(void);
+
+
+
+
 
 
 #endif /*FUNCTIONPOINTERS_H*/

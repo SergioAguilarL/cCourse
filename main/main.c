@@ -1,6 +1,6 @@
 
 #ifdef FUNC_PTR_AND_CALLBACKS
-#include "functionPointers.h"
+#include "functionPointerAndCallbacks.h"
 #endif
 
 
@@ -8,13 +8,13 @@
 
 int main()
 {
-    printf("Main Application");
+    printf("Main Application\n");
 
     #ifdef FUNC_PTR_AND_CALLBACKS
 
-        printf("Executing Function pointers and callbacks app");
+        printf("Executing Function pointers and callbacks app\n");
 
-        functionPointers();
+        functionPointersMain();
     #endif
 
 

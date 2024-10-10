@@ -2,11 +2,12 @@ cmake_minimum_required(VERSION 3.30.4)
 project(FunctioPointerCallbacks)
 
 # Include directories for headers
-include_directories(include )
+include_directories(include interfaces/include )
 
 # Source files
 set(SOURCES
     source/functionPointers.c
+    interfaces/source/mathOperation.c
 )
 
 # Create a static library
