@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "mathOperation.h"
 
 /*the porpuse of this fiule is to practice funcion pointer for C
@@ -6,6 +7,8 @@
 
 void calculatorMain(void)
 {
+    system("cls");
+    printf("Executing calculator app\n");
     int option;
     int num1; 
     int num2;
@@ -14,7 +17,7 @@ void calculatorMain(void)
     
     printf("\nSelect an operation to perform: \n");
 
-    printf("\n1.Sum:\n2.Substract\n3.Multiplication\n4.Division\n");
+    printf("1.Sum:\n2.Substract\n3.Multiplication\n4.Division\n");
 
     scanf("%d",&option);
     if(option < 1 || option > 4 )
