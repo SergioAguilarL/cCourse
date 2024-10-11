@@ -5,6 +5,7 @@ set BUILD_DIR=build
 echo Select an application to build:
 echo 1. Function pointers and callbacks
 echo 2. Pointers
+echo 3. Linked lists
 set /p choice="Enter the number of your choice: "
 
 if "%choice%"=="1" (
@@ -13,7 +14,10 @@ if "%choice%"=="1" (
 )  else if "%choice%"=="2" (
     set APP_NAME=PointersModule
     set APP_FLAG=POINTER_FLAG
-) else ( 
+)  else if "%choice%"=="3" (
+    set APP_NAME=linkedLists
+    set APP_FLAG=LINKED_LIST
+)else ( 
     echo Invalid choice.
     exit /b 1
 )

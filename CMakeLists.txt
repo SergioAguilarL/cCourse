@@ -32,5 +32,18 @@ if(PointersModule)
 
 endif()
 
+# Options to build specific apps
+option(linkedLists "Build the Linked Lists Application" OFF)
+
+# Conditional inclusion based on selected app
+if(linkedLists)
+    add_subdirectory(cApps/linkedLists)
+    add_executable(LinkedLists main/main.c)
+    target_include_directories(LinkedLists  PRIVATE cApps/linkedLists/include cApps/linkedLists/interfaces/include )
+    target_compile_definitions(LinkedLists PRIVATE ${APP_FLAG})
+    target_link_libraries(LinkedLists  linkedLists)
+
+endif()
+
 
 

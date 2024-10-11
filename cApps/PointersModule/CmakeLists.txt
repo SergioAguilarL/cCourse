@@ -8,8 +8,12 @@ include_directories(include interfaces/include )
 set(SOURCES
     source/swapNumbersApp.c
     source/reverseArrayApp.c
+    source/linkedListInsertionApp.c
+    source/MatrixAllocationApp.c
     interfaces/source/swapNumberIf.c
     interfaces/source/reverseArrayIf.c
+    interfaces/source/MatrixAllocationIf.c
+    interfaces/source/linkedListIf.c
 
 
 )
