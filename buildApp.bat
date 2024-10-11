@@ -4,12 +4,16 @@ set BUILD_DIR=build
 
 echo Select an application to build:
 echo 1. Function pointers and callbacks
+echo 2. Pointers
 set /p choice="Enter the number of your choice: "
 
 if "%choice%"=="1" (
     set APP_NAME=FunctioPointerCallbacks
     set APP_FLAG=FUNC_PTR_AND_CALLBACKS
-)  else (
+)  else if "%choice%"=="2" (
+    set APP_NAME=PointersModule
+    set APP_FLAG=POINTER_FLAG
+) else ( 
     echo Invalid choice.
     exit /b 1
 )

@@ -19,5 +19,18 @@ if(FunctioPointerCallbacks)
 
 endif()
 
+# Options to build specific apps
+option(PointersModule "Build the Pointers Application" OFF)
+
+# Conditional inclusion based on selected app
+if(PointersModule)
+    add_subdirectory(cApps/PointersModule)
+    add_executable(pointersModule main/main.c)
+    target_include_directories(pointersModule  PRIVATE cApps/PointersModule/include cApps/PointersModule/interfaces/include )
+    target_compile_definitions(pointersModule PRIVATE ${APP_FLAG})
+    target_link_libraries(pointersModule  PointersModule)
+
+endif()
+
 
 

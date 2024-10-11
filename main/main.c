@@ -4,6 +4,10 @@
 #include "functionPointerAndCallbacks.h"
 #endif
 
+#ifdef POINTER_FLAG
+#include "Pointers.h"
+#endif
+
 
 
 
@@ -30,6 +34,27 @@ int main()
         }
         
     #endif
+
+    #ifdef POINTER_FLAG
+
+    int option;
+
+        printf("\nSelect an option:\n1.Swap number app\n2.Reverse Array\n");
+        scanf("%d",&option);
+
+        if( option < 1 || option > 3)
+        {
+            printf("\nInvalid option\n");
+        }
+        else
+        {
+
+            menuHandler[option - 1]();
+        }
+
+    #endif
+
+    
 
 
     return 0; 
