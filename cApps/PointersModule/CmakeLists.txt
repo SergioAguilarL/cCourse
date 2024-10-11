@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.30.4)
+project(PointersModule)
+
+# Include directories for headers
+include_directories(include interfaces/include )
+
+# Source files
+set(SOURCES
+    source/swapNumbersApp.c
+    source/reverseArrayApp.c
+    source/linkedListInsertionApp.c
+    source/MatrixAllocationApp.c
+    interfaces/source/swapNumberIf.c
+    interfaces/source/reverseArrayIf.c
+    interfaces/source/MatrixAllocationIf.c
+    interfaces/source/linkedListIf.c
+
+
+)
+
+# Create a static library
+add_library(PointersModule STATIC ${SOURCES})
+
+# Specify where to place compiled files
+set_target_properties(PointersModule PROPERTIES
+    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/output"
+)

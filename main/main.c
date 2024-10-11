@@ -4,6 +4,14 @@
 #include "functionPointerAndCallbacks.h"
 #endif
 
+#ifdef POINTER_FLAG
+#include "Pointers.h"
+#endif
+
+#ifdef LINKED_LIST
+#include "linkedLists.h"
+#endif
+
 
 
 
@@ -30,6 +38,46 @@ int main()
         }
         
     #endif
+
+    #ifdef POINTER_FLAG
+
+    int option;
+
+        printf("\nSelect an option:\n1.Swap number app\n2.Reverse Array\n3.Allocate Matrix app\n");
+        scanf("%d",&option);
+
+        if( option < 1 || option > 4)
+        {
+            printf("\nInvalid option\n");
+        }
+        else
+        {
+
+            menuHandler[option - 1]();
+        }
+
+    #endif
+
+    #ifdef LINKED_LIST
+
+    int option;
+
+        printf("\nSelect an option:\n1.SinlgeLikedList app\n");
+        scanf("%d",&option);
+
+        if( option < 1 || option > 4)
+        {
+            printf("\nInvalid option\n");
+        }
+        else
+        {
+
+            menuHandler[option - 1]();
+        }
+
+    #endif
+
+    
 
 
     return 0; 
