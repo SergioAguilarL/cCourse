@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.30.4)
+project(linkedLists)
+
+# Include directories for headers
+include_directories(include interfaces/include )
+
+# Source files
+set(SOURCES
+    source/linkedListInsertionApp.c
+    interfaces/source/linkedListIf.c
+
+
+)
+
+# Create a static library
+add_library(linkedLists STATIC ${SOURCES})
+
+# Specify where to place compiled files
+set_target_properties(linkedLists PROPERTIES
+    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/output"
+)
