@@ -6,8 +6,8 @@ include_directories(include interfaces/include )
 
 # Source files
 set(SOURCES
-    source/linkedListInsertionApp.c
-    interfaces/source/linkedListIf.c
+    source/singleLinkedLists.c
+    interfaces/source/singleLinkedListIf.c
 
 
 )

@@ -1,4 +1,4 @@
-#include "linkedListIf.h"
+#include "singleLinkedListIf.h"
 
 void singleLinkedListAppMian(void)
 {
@@ -19,7 +19,12 @@ void singleLinkedListAppMian(void)
 
     insertNodeAtTail(&head, 12 );
 
-    printf("After deleting the head: ");
+    printf("After inserting at the tail: ");
+    displayList(head);
+
+    deleteAtTail(&head);
+    
+    printf("After deleting at the tail: ");
     displayList(head);
 
 }

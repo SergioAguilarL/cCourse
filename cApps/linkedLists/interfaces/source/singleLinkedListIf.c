@@ -1,4 +1,4 @@
-#include "linkedListIf.h"
+#include "singleLinkedListIf.h"
 
 /*function defintion for creating a node*/
 Node* createNode(int value) {
@@ -11,7 +11,6 @@ Node* createNode(int value) {
 /*function definiton for inseting a node at the head */
 void insertNodeAtHead(Node ** listHead, int value )
 {
-
     Node* newNode = createNode(value);
      newNode->next = *listHead;
     *listHead  = newNode;
@@ -59,6 +58,41 @@ void deleteAtHead(Node **listHead)
         Node *cpyNode = *listHead;
         *listHead = (*listHead)->next;
         free(cpyNode);
+
+    }
+
+}
+
+/*function definition for deleting  node at tail*/
+void deleteAtTail(Node ** listHead)
+{
+
+    if(*listHead == NULL)
+    {
+        /*do nothing list empty*/
+    }
+    else if((*listHead)->next == NULL)
+    {
+        /*single element in list*/
+         free(*listHead);
+        *listHead = NULL;
+
+    }
+    else 
+    {
+         Node *cpyNode  = *listHead;
+         Node* auxNode = NULL;
+
+        while (cpyNode->next->next !=NULL)
+        {
+            cpyNode = cpyNode->next; 
+        }
+
+        auxNode = cpyNode->next;
+
+        cpyNode->next = NULL;
+
+        free(auxNode);
 
     }
 
